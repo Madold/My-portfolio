@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    min-height: 75px;
+    background-color: var(--secondary);
+}
+
+.footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer img {
+    height: 50px;
+    transition: transform 400ms ease-in;
+}
+
+.footer img:hover {
+    transform: translateY(-5px) rotate(360deg);
+}

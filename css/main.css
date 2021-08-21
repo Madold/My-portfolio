@@ -1,0 +1,67 @@
+/**********Reset styles*********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********Fonts*********/
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/**********Variables*********/
+
+:root {
+    --primary: #011627;
+    --secondary: #fcfcfc;
+    --terciary: #ff9f1c;
+    --btnHover: #44bd32;
+}
+
+/**********Generals*********/
+
+body {
+    background-color: var(--primary);
+    font-family: "Inter";
+    font-size: 18px;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    background-color: var(--terciary);
+    border: 2px solid var(--terciary);
+    color: var(--secondary);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1.2em;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+
+
+/**********Main container*********/
+
+.main__container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    min-height: 900px;
+}

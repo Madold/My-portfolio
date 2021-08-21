@@ -1,0 +1,75 @@
+.myProjects {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    background-color: var(--terciary);
+    padding-top: 130px;
+}
+
+.myProjects::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 130px;
+    background-color: var(--primary);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    transform: rotate(180deg);
+}
+
+.myProjects .myProjects__title {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color: var(--primary);
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.myProjects .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-basis: 100%;
+    gap: 20px;
+    min-height: 350px;
+}
+
+.projects .project {
+    /* width: 250px; */
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all 200ms;
+}
+
+.project>.project-show {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0116279f;
+    color: var(--secondary);
+    transition: all 200ms;
+    opacity: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.project:hover img {
+    filter: blur(2px);
+}
+
+.project:hover>.project-show {
+    opacity: 1;
+}
+
+.project>img {
+    height: 200px;
+}
